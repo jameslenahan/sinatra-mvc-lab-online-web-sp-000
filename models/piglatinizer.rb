@@ -1,22 +1,22 @@
 class PigLatinizer
 
 
-def piglatinize(thing)
-  pig(thing)
-end
+  def piglatinize(thing)
+    pig(thing)
+  end
 
-def to_pig_latin(string)
-  pig(string)
-end
+  def to_pig_latin(string)
+   pig(string)
+  end
 
-def pig(thing)
-  alpha = ('a'..'z').to_a + ('A'..'Z').to_a
-  vowels = %w[a e i o u] + %w[A E I O U]
-  consonants = alpha - vowels
+  def pig(thing)
+    alpha = ('a'..'z').to_a + ('A'..'Z').to_a
+    vowels = %w[a e i o u] + %w[A E I O U]
+    consonants = alpha - vowels
 
-  showme = []
-    input = thing.split(' ') 
-      input.each do |word|
+    showme = []
+      input = thing.split(' ') 
+       input.each do |word|
           if word.length < 2
              showme << word + "way" 
           elsif vowels.include?(word[0])
