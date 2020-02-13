@@ -64,5 +64,4 @@ class PigLatinizer
       spliced_word << first_letter + "ay"
     end
   end
-
 end
