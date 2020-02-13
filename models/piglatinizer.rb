@@ -30,10 +30,9 @@ class PigLatinizer
           else 
              showme <<  word + '?'
           end
+        end
       end 
     end
   end
-  
   showme.join(', ').gsub(/,/, '')
-
 end
