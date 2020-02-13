@@ -1,6 +1,4 @@
 class PigLatinizer
-
-
   def piglatinize(thing)
     pig(thing)
   end
@@ -13,7 +11,6 @@ class PigLatinizer
     alpha = ('a'..'z').to_a + ('A'..'Z').to_a
     vowels = %w[a e i o u] + %w[A E I O U]
     consonants = alpha - vowels
-
     showme = []
       input = thing.split(' ') 
        input.each do |word|
