@@ -32,6 +32,8 @@ class PigLatinizer
           end
       end 
     end
+  end
+  
   showme.join(', ').gsub(/,/, '')
 
 end
